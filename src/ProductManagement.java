@@ -1,3 +1,5 @@
+import java.util.List;
+
 public interface ProductManagement {
     void addProduct(Product product);
     void editProduct(String name, Product product);
