@@ -8,11 +8,7 @@ public class User implements Authentication {
 
     // método para autenticar usuário
     @Override
-    public String authenticate(String username, String password) {
-        if (account.getPassword().equals(password) && account.getUsername().equals(username)) {
-            return "Login bem sucedido";
-        }else {
-            return "Errou em algum campo";
-        }
+    public Boolean authenticate(String username, String password) {
+        return account.getPassword().equals(password) && account.getUsername().equals(username);
     }
 }

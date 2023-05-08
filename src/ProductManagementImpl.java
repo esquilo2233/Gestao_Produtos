@@ -15,7 +15,6 @@ public class ProductManagementImpl implements ProductManagement{
         for (int i = 0; i < products.size(); i++) {
             if (products.get(i).getName().equals(name)) {
                 products.set(i, product);
-                break;
             }
         }
     }

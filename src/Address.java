@@ -6,6 +6,7 @@ public class Address {
 
     // construtor
     public Address(String street, String city, String state, String zipCode) {
+
         this.street = street;
         this.city = city;
         this.state = state;

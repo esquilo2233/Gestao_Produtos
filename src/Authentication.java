@@ -1,3 +1,3 @@
 public interface Authentication {
-    String authenticate(String username, String password);
+    Boolean authenticate(String username, String password);
 }
