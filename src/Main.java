@@ -3,5 +3,7 @@
 public class Main {
     public static void main(String[] args) {
         Account a = new Account("cenas","123","cenas@op.pt");
+        User u =new User(a);
+        u.authenticate("cenas","12");
     }
 }

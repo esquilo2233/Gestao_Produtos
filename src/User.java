@@ -1,4 +1,4 @@
-public class User implements Authentication{
+public class User implements Authentication {
     private Account account;
 
     // construtor
@@ -8,7 +8,11 @@ public class User implements Authentication{
 
     // método para autenticar usuário
     @Override
-    public boolean authenticate(String username, String password) {
-        return account.getUsername().equals(username) && account.getPassword().equals(password);
+    public String authenticate(String username, String password) {
+        if (account.getPassword().equals(password) && account.getUsername().equals(username)) {
+            return "Login bem sucedido";
+        }else {
+            return "Errou em algum campo";
+        }
     }
 }
