@@ -6,6 +6,7 @@ public class Main {
         //User u =new User(a);
         //u.authenticate("cenas","123");
         //Address a1 =  new Address("c","b","o","4920-090");
-
+        Program program = new Program();
+        program.Start();
     }
 }
